@@ -7,9 +7,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+public class LoginViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
