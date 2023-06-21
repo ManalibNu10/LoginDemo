@@ -11,6 +11,8 @@
 		A70550A82A42EC0600825A4B /* LoginDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A705509D2A42EC0600825A4B /* LoginDemo.framework */; };
 		A70550AD2A42EC0600825A4B /* LoginDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70550AC2A42EC0600825A4B /* LoginDemoTests.swift */; };
 		A70550AE2A42EC0600825A4B /* LoginDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = A70550A02A42EC0600825A4B /* LoginDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A70550B92A42F14000825A4B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70550B72A42F14000825A4B /* LoginViewController.swift */; };
+		A70550BA2A42F14000825A4B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70550B82A42F14000825A4B /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		A70550A12A42EC0600825A4B /* LoginDemo.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = LoginDemo.docc; sourceTree = "<group>"; };
 		A70550A72A42EC0600825A4B /* LoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70550AC2A42EC0600825A4B /* LoginDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDemoTests.swift; sourceTree = "<group>"; };
+		A70550B72A42F14000825A4B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A70550B82A42F14000825A4B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				A70550A02A42EC0600825A4B /* LoginDemo.h */,
 				A70550A12A42EC0600825A4B /* LoginDemo.docc */,
+				A70550B72A42F14000825A4B /* LoginViewController.swift */,
+				A70550B82A42F14000825A4B /* LoginViewController.xib */,
 			);
 			path = LoginDemo;
 			sourceTree = "<group>";
@@ -177,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A70550BA2A42F14000825A4B /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A70550B92A42F14000825A4B /* LoginViewController.swift in Sources */,
 				A70550A22A42EC0600825A4B /* LoginDemo.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +410,7 @@
 		A70550B52A42EC0600825A4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QNN4S4EU9V;
@@ -418,6 +427,7 @@
 		A70550B62A42EC0600825A4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QNN4S4EU9V;
