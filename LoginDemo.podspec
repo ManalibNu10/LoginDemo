@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "http://EXAMPLE/LoginDemo"
 
-  spec.license      = "MIT (example)"
+  spec.license      = "MIT"
 
   spec.author             = { "ManalibNu10" => "manalib@nu10.co" }
 
