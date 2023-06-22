@@ -9,13 +9,37 @@ import UIKit
 
 public class LoginViewController: UIViewController {
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
-
+    
+    public init() {
+        super.init(nibName: "LoginViewController", bundle: Bundle(for: LoginViewController.self))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
+        activityIndicator.startAnimating()
+        sender.isEnabled = false
+        let url = URL(string: "https://cat-fact.herokuapp.com/facts/")!
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            print("Login Demo Response \(response)")
+            print("Login Demo Error \(error)")
+            DispatchQueue.main.async {
+                sender.isEnabled = true
+                self.activityIndicator.stopAnimating()
+            }
+        }
+        task.resume()
+    }
+    
     /*
     // MARK: - Navigation
 
